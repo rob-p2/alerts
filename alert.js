@@ -6,7 +6,7 @@
         
         // If CSS needs to be appended to the head.
         var cssLink = document.createElement("link");
-        cssLink.href = "http://app.northwell-d8.vm/modules/custom/northwell_alerts/css/northwell_alerts.css";
+        cssLink.href = "//app.northwell-d8.vm/modules/custom/northwell_alerts/css/northwell_alerts.css";
         cssLink.setAttribute('rel', 'stylesheet');
         cssLink.setAttribute('type', 'text/css');
         document.head.appendChild(cssLink);
