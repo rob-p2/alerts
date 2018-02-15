@@ -1,0 +1,93 @@
+.link--cta:before {
+  transition: all 0.2s ease 0s;
+  border-top-right-radius: 3px;
+}
+
+.link--cta::before {
+  content: "";
+  display: inline-block;
+  border: 11.5px solid transparent;
+  border-top-color: #009adf;
+  border-right-color: #009adf;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.status-message {
+  background-color: #bbeaff;
+  padding: 5px 20px;
+  position: relative;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .status-message {
+    padding: 5px 30px;
+  }
+}
+.status-message li {
+  margin: 10px 0;
+}
+.status-message li:before {
+  background-color: #717376 !important;
+}
+.status-message.status-message--error {
+  background-color: #e33d2e;
+  color: white;
+}
+.status-message.status-message--error .icon {
+  color: white;
+}
+.status-message.status-message--error li:before {
+  background-color: white !important;
+}
+.status-message.status-message--error .status-message__cta {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.status-message.status-message--error .status-message__cta a {
+  color: white;
+}
+.status-message.status-message--error .status-message__cta a::before {
+  border-top-color: white;
+  border-right-color: white;
+}
+.status-message ul {
+  order: 1;
+  margin-left: 10px;
+}
+.status-message.status-message.body__copy ul li:before {
+  background-color: #717376;
+}
+.status-message.status-message--error.body__copy ul li:before {
+  background-color: white;
+}
+.status-message .icon {
+  margin-left: 5px;
+  font-size: 40px;
+  color: #717376;
+  order: 0;
+}
+@media (min-width: 768px) {
+  .status-message .icon {
+    font-size: 68px;
+    margin-left: 10px;
+  }
+}
+.status-message--link {
+  position: relative;
+}
+.status-message--link:hover {
+  background-color: #971f14;
+}
+.status-message--link a.status-message__link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.status-message--link li {
+  color: white;
+}
