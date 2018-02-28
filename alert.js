@@ -5,7 +5,7 @@ var alert_div = document.createElement('div');
         
         // If CSS needs to be appended to the head.
         var cssLink = document.createElement("link");
-        cssLink.href = "//rawgithub.com/rob-p2/alerts/master/northwell_alerts.css";
+        cssLink.href = "https://rawgithub.com/rob-p2/alerts/master/northwell_alerts.css";
         cssLink.setAttribute('rel', 'stylesheet');
         cssLink.setAttribute('type', 'text/css');
         document.head.appendChild(cssLink);
